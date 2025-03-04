@@ -1,0 +1,246 @@
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf7e2;
+    color: #2d572c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    width: 400px; /* Ajustable selon tes goûts */
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Titres */
+h1 {
+    font-size: 2.5rem;
+    color: #2d572c;
+    margin-bottom: 10px;
+}
+#walloButton{
+    margin-top: 20px;
+}
+.motus {
+    font-weight: bold;
+    color: #ff8c00;
+    font-size: 1.5rem;
+}
+
+
+/* Boutons de difficulté */
+.buttons {
+    margin: 20px 0;
+}
+.buttons .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2d572c;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.buttons .btn:hover {
+    background-color: #1e3d1e;
+}
+
+/* Boutons Connexion / Inscription */
+.auth-buttons {
+    margin-top: 20px;
+}
+.auth-buttons .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.auth-buttons .btn-secondary:hover {
+    background-color: #e67600;
+}
+
+/* Lien vers scores */
+.link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #2d572c;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Champ de formulaire */
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Bouton formulaire */
+button, input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover, input[type="submit"]:hover {
+    background-color: #e67600;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #3a7d44;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background: #f7931e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #d97706;
+}
+
+a.link, .button {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3a7d44;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a.link:hover, .button:hover {
+    color: #f7931e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #3a7d44;
+    color: #fff;
+}
+
+
+.correct {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+.wrong {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+.absent {
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Ajout responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button, .link {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+}
+
